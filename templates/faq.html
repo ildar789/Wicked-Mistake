@@ -1,27 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Часто задаваемые вопросы</title>
-</head>
-    <body>
-        <div class="alert alert-primary" role="alert">
-                      О чём этот сайт?
-        </div>
-        <div class="alert alert-secondary" role="alert">
-                      Ответ: здесь выкладываются текущие новости о разработках наших игр и подобные новости
-        </div>
-        <div class="alert alert-primary" role="alert">
-                      Кто занимается разработкой сайта и игры?
-        </div>
-        <div class="alert alert-secondary" role="alert">
-                      Ответ: 3 человека --- Пландин Тимофей, Шамгулов Ильдар и Рязанцева Анастасия
-        </div>
-        <div class="alert alert-primary" role="alert">
-                      На чьей основе создаётся(создан) сайт?
-        </div>
-        <div class="alert alert-secondary" role="alert">
-                      Ответ: на основе языка Python(Flask и свяжущие, включая базы данных), HTML разметка
-        </div>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="alert alert-primary alert-sm" role="alert"><h2>О чём этот сайт?</h2>
+    </div>
+    <div class="alert alert-secondary" role="alert"><h1>Ответ: здесь выкладываются текущие новости о разработках наших игр и подобные новости</h1>
+    </div>
+    <h1> </h1>
+    <div class="alert alert-primary" role="alert"><h2>Кто занимается разработкой сайта и игры?</h2>
+    </div>
+     <div class="alert alert-secondary" role="alert"><h1>Ответ: 3 человека --- Пландин Тимофей, Шамгулов Ильдар и Рязанцева Анастасия</h1>
+     </div>
+    <h1> </h1>
+    <div class="alert alert-primary" role="alert"><h2>Посредством чего создавался сайт</h2>
+    </div>
+    <div class="alert alert-secondary" role="alert"><h1>Ответ: с помощью языка программирования Python(Flask, базы данных), HTML разметка</h1>
+    </div>
+    <p>
+        <a class="btn btn-primary" href="/">Вернуться на главную</a>
+    </p>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="col-xl">
+    <div class="media">
+        <img src={{current_user.photo}} class="align-self-start mr-3" alt={{current_user.name}}
+             width="200"
+             height="200">
+            <div class="media-body">
+                <h1 class="mt-0">{{current_user.name + ' ' + current_user.surname}}</h1>
+                <p>Статус: {{current_user.schizm}}</p>
+                <p>Указанная при регистрации почта: {{current_user.email}}</p>
+            </div>
+        <p>
+            <a class="btn btn-outline-primary btn-lg" href="/">Вернуться</a>
+        </p>
+    </div>
+</div>
+{% endblock %}
