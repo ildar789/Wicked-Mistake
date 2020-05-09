@@ -18,8 +18,7 @@ class User(SqlAlchemyBase, UserMixin):
     hashed_password = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     created_date = sqlalchemy.Column(sqlalchemy.DateTime,
                                      default=datetime.datetime.now)
-    photo = sqlalchemy.Column(sqlalchemy.String,
-                              index=True, unique=True, nullable=True)
+    photo = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     news = orm.relation("News", back_populates='user')
 
     def set_password(self, password):
