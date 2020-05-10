@@ -38,14 +38,14 @@ def faq():
                         <div class="alert alert-secondary" role="alert"><h1>Ответ: здесь выкладываются текущие новости о разработках наших игр и подобные новости</h1>
                         </div>
                         <h1></h1>
-                        <div class="alert alert-primary" role="alert"><h2>Кто занимается разработкой сайта и игры?</h2>
+                        <div class="alert alert-primary" role="alert"><h2>Кто занимается разработкой сайта?</h2>
                         </div>
                         <div class="alert alert-secondary" role="alert"><h1>Ответ: 3 человека --- Пландин Тимофей, Шамгулов Ильдар и Рязанцева Анастасия</h1>
                         </div>
                         <h1></h1>
-                        <div class="alert alert-primary" role="alert"><h2>На чьей основе создаётся(создан) сайт?</h2>
+                        <div class="alert alert-primary" role="alert"><h2>С помошью чего создавался сей сайт?</h2>
                         </div>
-                        <div class="alert alert-secondary" role="alert"><h1>Ответ: на основе языка Python(Flask и свяжущие, включая базы данных), HTML разметка</h1>
+                        <div class="alert alert-secondary" role="alert"><h1>Ответ: с помощью языка программирования Python (Flask, SQLAlchemy и другие библиотеки), баз данных и HTML разметки</h1>
                         </div>
                     </body>
                 </html>'''
