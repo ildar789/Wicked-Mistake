@@ -1,4 +1,5 @@
 import datetime
+from time import time
 import sqlalchemy
 from flask_login import UserMixin
 from sqlalchemy import orm
@@ -27,7 +28,7 @@ class User(SqlAlchemyBase, UserMixin):
     def check_password(self, password):
         return check_password_hash(self.hashed_password, password)
 
-'''' def get_reset_password_token(self, expires_in=600):
+    def get_reset_password_token(self, expires_in=600):
         return jwt.encode(
             {'reset_password': self.id, 'exp': time() + expires_in},
             app.config['SECRET_KEY'], algorithm='HS256').decode('utf-8')
@@ -39,4 +40,4 @@ class User(SqlAlchemyBase, UserMixin):
                             algorithms=['HS256'])['reset_password']
         except:
             return
-        return User.query.get(id)'''''
+        return User.query.get(id)

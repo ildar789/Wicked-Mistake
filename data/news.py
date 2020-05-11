@@ -1,5 +1,6 @@
 import datetime
 import sqlalchemy
+from flask_wtf import FlaskForm
 from sqlalchemy import orm
 from .db_session import SqlAlchemyBase
 
@@ -17,3 +18,10 @@ class News(SqlAlchemyBase):
     user_id = sqlalchemy.Column(sqlalchemy.Integer,
                                 sqlalchemy.ForeignKey("users.id"))
     user = orm.relation('User')
+
+class NewsForm(FlaskForm):
+    title = 'Заголовок'
+    content = "Содержание"
+    theme = 'Тема новости'
+    is_private = "Личное"
+    submit = 'Применить'
